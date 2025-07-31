@@ -12,3 +12,33 @@
  pip install python-dotenv 
 
  pip freeze > requirements.txt 
+
+
+
+***Remove .env from Git Tracking***
+```
+git rm --cached .env
+```
+
+***Add .env to .gitignore***
+```
+.env
+```
+
+***Commit the Change***
+```
+git commit -m "Remove .env file from repository"
+
+git push origin main
+```
+```
+```
+
+
+***05_chatmodel_hf_local.py***
+# Not recommanded
+for running hugging face model locally
+```
+pip install torch  
+```
+
